@@ -1,5 +1,8 @@
-# Senior PHP Developer Assignment
+# Senior PHP Developer Code Review
 
+## Scenario:
+You'll be reviewing a financial application that processes transactions from bank statement files uploaded via REST. 
+Each transaction needs to be read from a file, processed to calculate the associated fee based on given criteria and then saved to a MySQL database.
 
 ## Requirements
 
@@ -19,12 +22,5 @@
   - **Credit:** Charge a fee of 1.5% of the transaction amount.
   - **Debit:** Charge a fee of 1.0% of the transaction amount.
 
-### 3. Transaction Categorization
-
-- If the transaction is a `Credit` and the amount is greater than $10,000, trigger a notification to the finance team.
-- If the transaction is a `Debit` and the amount is less than $500, apply a discount of 0.5% to the calculated fee.
-- If transaction is a international (currency != USD), apply additional fee of 0.5%
-
-### 4. Save Transactions to MySQL
-
+### 3. Save Transactions to MySQL
 - Save the processed transactions, including the calculated fees, to a MySQL database.
