@@ -22,6 +22,6 @@ Each transaction needs to be read from a file, processed to calculate the associ
   - **Credit:** Charge a fee of 1.5% of the transaction amount.
   - **Debit:** Charge a fee of 1.0% of the transaction amount.
 
-### 5. Save Transactions to MySQL
+### 3. Save Transactions to MySQL
 
 - Save the processed transactions, including the calculated fees, to a MySQL database.
