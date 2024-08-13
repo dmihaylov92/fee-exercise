@@ -1,5 +1,8 @@
 # Senior PHP Developer Assignment
 
+## Scenario:
+You're building a financial application that processes transactions from bank statement files uploaded via REST. 
+Each transaction needs to be read from a file, processed to calculate the associated fee based on given criteria and then saved to a MySQL database.
 
 ## Requirements
 
@@ -18,12 +21,6 @@
 - Implement a service to calculate fees based on the transaction type:
   - **Credit:** Charge a fee of 1.5% of the transaction amount.
   - **Debit:** Charge a fee of 1.0% of the transaction amount.
-
-### 3. Transaction Categorization
-
-- If the transaction is a `Credit` and the amount is greater than $10,000, trigger a notification to the finance team.
-- If the transaction is a `Debit` and the amount is less than $500, apply a discount of 0.5% to the calculated fee.
-- If transaction is a international (currency != USD), apply additional fee of 0.5%
 
 ### 5. Save Transactions to MySQL
 
