@@ -25,6 +25,6 @@
 - If the transaction is a `Debit` and the amount is less than $500, apply a discount of 0.5% to the calculated fee.
 - If transaction is a international (currency != USD), apply additional fee of 0.5%
 
-### 5. Save Transactions to MySQL
+### 4. Save Transactions to MySQL
 
 - Save the processed transactions, including the calculated fees, to a MySQL database.
