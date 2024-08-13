@@ -21,9 +21,9 @@
 
 ### 3. Transaction Categorization
 
-- Implement a service to categorize transactions:
 - If the transaction is a `Credit` and the amount is greater than $10,000, trigger a notification to the finance team.
 - If the transaction is a `Debit` and the amount is less than $500, apply a discount of 0.5% to the calculated fee.
+- If transaction is a international (currency != USD), apply additional fee of 0.5%
 
 ### 5. Save Transactions to MySQL
 
