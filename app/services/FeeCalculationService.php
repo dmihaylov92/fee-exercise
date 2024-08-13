@@ -14,12 +14,12 @@ class FeeCalculationService
         $this->featureToggleService = new FeatureToggle($db);
     }
 
-    public function calculate(Transaction $transaction): void
+    public function calculate(Transaction $transaction): float
     {
         $feesEnabled = $this->featureToggleService->isEnabled('fees_feature');
         
         if ($feesEnabled === false) {
-            return;
+            return 0;
         }
 
         $fee = 0;
@@ -31,5 +31,7 @@ class FeeCalculationService
         }
 
         $transaction->fee = $fee;
+        
+        return $fee;
     }
 }
