@@ -1,7 +1,7 @@
 # Senior PHP Developer Code Review
 
 ## Scenario:
-You're building a financial application that processes transactions from bank statement files uploaded via REST. 
+You'll be reviewing a financial application that processes transactions from bank statement files uploaded via REST. 
 Each transaction needs to be read from a file, processed to calculate the associated fee based on given criteria and then saved to a MySQL database.
 
 ## Requirements
